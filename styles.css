@@ -69,6 +69,18 @@ html {
     background-clip: text;
 }
 
+.logo-image {
+    height: 50px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -689,6 +701,11 @@ section {
     
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translateY(-8px);
+    }
+    
+    .logo-image {
+        height: 40px;
+        max-width: 150px;
     }
     
     .hero-title {
