@@ -1,3 +1,46 @@
+// Language Switcher
+const langButtons = document.querySelectorAll('.lang-btn');
+const bioLangSections = document.querySelectorAll('.bio-lang');
+
+langButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const selectedLang = button.getAttribute('data-lang');
+        
+        // Remove active class from all buttons
+        langButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        // Hide all language sections
+        bioLangSections.forEach(section => {
+            section.style.display = 'none';
+        });
+        
+        // Show selected language section
+        const selectedSection = document.querySelector(`.bio-lang[data-lang="${selectedLang}"]`);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+        
+        // Store language preference in localStorage
+        localStorage.setItem('preferredLanguage', selectedLang);
+    });
+});
+
+// Load saved language preference on page load
+window.addEventListener('load', () => {
+    const savedLang = localStorage.getItem('preferredLanguage');
+    
+    if (savedLang) {
+        // Find and click the button for saved language
+        const savedLangButton = document.querySelector(`.lang-btn[data-lang="${savedLang}"]`);
+        if (savedLangButton) {
+            savedLangButton.click();
+        }
+    }
+});
+
 // Slideshow functionality
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
