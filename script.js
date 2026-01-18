@@ -255,8 +255,20 @@ window.addEventListener('load', () => {
     // Add loading animation complete class
     document.body.classList.add('loaded');
     
+    // Initialize Lucide icons
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+    
     // Optional: Uncomment to enable custom cursor
     // createCursorEffect();
+});
+
+// Also initialize icons when DOM is ready (backup)
+document.addEventListener('DOMContentLoaded', () => {
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
 });
 
 // Prevent default drag behavior on images
