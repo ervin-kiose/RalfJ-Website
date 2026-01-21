@@ -321,7 +321,11 @@ html {
 
 /* Biography Section */
 .biography {
-    background: var(--darker-bg);
+    background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), url('https://github.com/ervin-kiose/RalfJ-Website/blob/main/images/Photo%2015-9-23,%2012%2020%2021.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .language-selector {
@@ -399,16 +403,13 @@ html {
 }
 
 .bio-content {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 60px;
-    align-items: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bio-image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 2px;
+    display: none;
 }
 
 .bio-image img {
@@ -433,7 +434,14 @@ html {
 }
 
 .bio-text {
-    padding-top: 20px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .bio-intro {
@@ -776,8 +784,12 @@ html {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .bio-content {
-        grid-template-columns: 1fr;
-        gap: 50px;
+        padding: 20px;
+    }
+
+    .bio-text {
+        max-width: 100%;
+        padding: 30px;
     }
     
     .section-number {
