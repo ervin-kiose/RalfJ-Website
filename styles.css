@@ -53,7 +53,7 @@ html {
 .nav-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 15px 40px;
+    padding: 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,12 +123,12 @@ html {
 /* Hero Section */
 .hero {
     position: relative;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 75px);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: 85px;
+    margin-top: 75px;
 }
 
 .slideshow-container {
