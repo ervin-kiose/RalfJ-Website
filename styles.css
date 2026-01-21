@@ -321,11 +321,11 @@ html {
 
 /* Biography Section */
 .biography {
-    background: linear-gradient(rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0.3)), url('https://github.com/ervin-kiose/RalfJ-Website/blob/main/images/Photo%2015-9-23,%2012%2020%2021.jpg?raw=true');
+    background: linear-gradient(rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1)), url('https://github.com/ervin-kiose/RalfJ-Website/blob/main/images/Photo%2015-9-23,%2012%2020%2021.jpg?raw=true');
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-    background-color: var(--darker-bg);
+    background-color: #808080;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -441,10 +441,6 @@ html {
     width: 100%;
     text-align: center;
     padding: 30px 50px;
-    background: rgba(10, 10, 10, 0.4);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .bio-intro {
@@ -453,6 +449,7 @@ html {
     margin-bottom: 20px;
     color: var(--secondary-color);
     line-height: 1.5;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .bio-text p {
@@ -460,6 +457,7 @@ html {
     color: var(--text-gray);
     font-size: 15px;
     line-height: 1.6;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .bio-stats {
@@ -481,6 +479,7 @@ html {
     font-size: 48px;
     color: var(--primary-color);
     margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .stat-label {
@@ -488,6 +487,7 @@ html {
     font-size: 12px;
     letter-spacing: 2px;
     color: var(--text-gray);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Spotify Section */
