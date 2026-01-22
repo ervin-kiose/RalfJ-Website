@@ -315,8 +315,8 @@ html {
 /* Biography Section */
 .biography {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a0a14 50%, #0a1419 100%), url('https://github.com/ervin-kiose/RalfJ-Website/blob/main/images/fulllogo_transparent_nobuffer.png?raw=true');
-    background-size: auto 40%, cover;
-    background-position: center top 15%, center;
+    background-size: cover, 60% auto;
+    background-position: center, center top 10%;
     background-repeat: no-repeat, no-repeat;
     min-height: 100vh;
     display: flex;
