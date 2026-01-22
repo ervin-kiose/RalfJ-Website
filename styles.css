@@ -314,11 +314,10 @@ html {
 
 /* Biography Section */
 .biography {
-    background: linear-gradient(rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1)), url('https://github.com/ervin-kiose/RalfJ-Website/blob/main/images/Photo%2015-9-23,%2012%2020%2021.jpg?raw=true');
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-color: #808080;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0a14 50%, #0a1419 100%), url('https://github.com/ervin-kiose/RalfJ-Website/blob/main/images/fulllogo_transparent_nobuffer.png?raw=true');
+    background-size: auto 40%, cover;
+    background-position: center top 15%, center;
+    background-repeat: no-repeat, no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
