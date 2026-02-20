@@ -20,6 +20,14 @@ body {
     color: var(--text-light);
     overflow-x: hidden;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > section,
+body > .page-section {
+    flex: 1;
 }
 
 html {
