@@ -37,17 +37,36 @@ Designed by Ervin Kiose. Deployed on Vercel with auto-deploy on push.
 - **Responsive breakpoints:** 1024px, 768px, 480px
 - Nav stays horizontal on all screen sizes (no hamburger menu)
 
+## Transparency & Background
+- **Navbar:** transparent (`rgba(0,0,0,0.15)`) with `backdrop-filter: blur(10px)`, slightly darker when scrolled (`rgba(0,0,0,0.3)`)
+- **Navbar logo:** uses `mix-blend-mode: screen` to make the JPG's black background transparent
+- **Footer:** fully transparent on all pages (`background: transparent`)
+- **Body gradient:** `linear-gradient(135deg, #0a0a0a 0%, #1a0a14 50%, #0a1419 100%)` with `background-attachment: fixed`
+- **Mobile gradient fix:** `background-attachment: fixed` doesn't work on mobile browsers — uses `body::before` pseudo-element with fixed position instead (in 768px media query)
+- **Logo watermark:** `fulllogo_transparent_nobuffer.png` shown as absolute-positioned background on spotify, events, contact, and biography pages (`.page-section > .bio-logo`)
+- **Contact watermark:** lower opacity (0.15 vs 0.25)
+
 ## Hero (index.html)
-- Full-screen video background (`.mov` file served from GitHub raw URL)
+- Full-screen video background (`hero-video.mp4`)
 - Video: autoplay, muted, loop, playsinline
 - Pink/cyan gradient overlay on video (`mix-blend-mode: multiply`)
 - Hero logo/subtitle currently commented out
+- Home page navbar: `position: absolute` to overlay the video
+- Home page footer: `position: absolute; bottom: 0` to overlay the video
+
+## Mobile-Specific (768px breakpoint)
+- **Home page:** video uses `object-fit: contain` with `transform: scale(1.5) translateY(-5%)` for controlled zoom; footer is `position: fixed` at bottom
+- **Spotify page:** footer is `position: fixed` at bottom; section uses `flex: none` to prevent stretching; Spotify embed uses dark theme (`&theme=0`)
+- **Contact page:** reduced font sizes, input padding, textarea min-height (80px), form gaps (8px); footer is `position: fixed` at bottom
+- **All pages:** nav stays horizontal (no hamburger), responsive font/padding reductions at 768px and 480px
 
 ## Images & Assets (images/ folder)
 - `Logo1-Jpeg-02.jpg` — nav logo (served from GitHub raw URL)
-- `fulllogo_transparent_nobuffer.png` — hero logo (commented out)
+- `fulllogo_transparent_nobuffer.png` — hero logo (commented out) + background watermark on content pages
+- `grayscale_transparent.png` — grayscale version of logo (available but not currently used)
 - `InstagramTransparent.png`, `TikTokTransparent.png`, `SpotifyTransparent.png`, `SoundcloudTransparent.png`, `BeatportTransparent.png`, `AppleTransparent.png`, `TraxsourceTransparent.png` — footer social icons
-- `Video 6-7-23, 23 35 09.mov` — hero background video
+- `hero-video.mp4` — hero background video
+- `Video 6-7-23, 23 35 09.mov` — original video file
 - Favicons: `favicon-32x32.png`, `favicon-16x16.png`, `apple-touch-icon.png`
 
 ## Artist Info 
