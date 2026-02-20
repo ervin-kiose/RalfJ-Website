@@ -88,6 +88,32 @@ body .contact-form {
     gap: 15px;
 }
 
+/* Biography page */
+.biography.page-section {
+    padding-top: 80px;
+}
+
+.biography .language-selector {
+    margin-bottom: 12px;
+}
+
+.biography .bio-text {
+    padding: 20px 40px;
+}
+
+.biography .bio-intro {
+    margin-bottom: 12px;
+}
+
+.biography .bio-text p {
+    margin-bottom: 10px;
+}
+
+.biography .bio-stats {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
