@@ -103,6 +103,8 @@ body.spotify-page .spotify-embed iframe {
 body.spotify-page .spotify-content .btn {
     flex-shrink: 0;
     align-self: center;
+    padding: 12px 30px;
+    font-size: 13px;
 }
 
 body.spotify-page .footer {
