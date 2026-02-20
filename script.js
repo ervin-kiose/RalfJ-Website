@@ -1,5 +1,30 @@
-// Video background (replaces slideshow)
-// Video plays automatically with autoplay, loop, and muted attributes in HTML
+// Video background - force autoplay with fallback
+const heroVideo = document.querySelector('.hero-video');
+if (heroVideo) {
+    function tryPlay() {
+        heroVideo.muted = true;
+        heroVideo.play().catch(() => {
+            // Retry after a short delay if browser blocked autoplay
+            setTimeout(tryPlay, 500);
+        });
+    }
+
+    // Try playing immediately, on DOM ready, and on window load
+    tryPlay();
+    document.addEventListener('DOMContentLoaded', tryPlay);
+    window.addEventListener('load', tryPlay);
+
+    // Also try on first user interaction as a last resort
+    function playOnInteraction() {
+        tryPlay();
+        document.removeEventListener('click', playOnInteraction);
+        document.removeEventListener('touchstart', playOnInteraction);
+        document.removeEventListener('scroll', playOnInteraction);
+    }
+    document.addEventListener('click', playOnInteraction);
+    document.addEventListener('touchstart', playOnInteraction);
+    document.addEventListener('scroll', playOnInteraction);
+}
 
 // Language Switcher (only on biography page)
 if (document.querySelector('.language-selector')) {
