@@ -39,6 +39,7 @@ html {
 body.home-page {
     height: 100vh;
     height: 100dvh;
+    position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -55,8 +56,16 @@ body.home-page .hero {
     margin-top: 0;
 }
 
+body.home-page .hero {
+    flex: 1;
+}
+
 body.home-page .footer {
-    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 /* Spotify page */
