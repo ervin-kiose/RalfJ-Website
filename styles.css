@@ -383,6 +383,25 @@ body .contact-form {
 .page-section {
     min-height: calc(100vh - 180px);
     padding: 100px 0 30px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0a14 50%, #0a1419 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-section > .bio-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.25;
+    width: 100%;
+    text-align: center;
+}
+
+.page-section > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .section-header {
