@@ -991,9 +991,9 @@ body .contact-form {
     }
 
     body.spotify-page .page-section {
-        padding: 10px 0;
+        padding-top: 70px;
+        padding-bottom: 0;
         min-height: auto;
-        padding-bottom: 5px;
     }
 
     body.spotify-page .spotify-description {
