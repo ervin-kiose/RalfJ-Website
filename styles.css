@@ -60,6 +60,10 @@ body.spotify-page .spotify-description {
     margin-bottom: 15px;
 }
 
+body.spotify-page .spotify-embed {
+    margin-bottom: 10px;
+}
+
 body.spotify-page .spotify-content .btn {
     padding: 12px 30px;
     font-size: 13px;
