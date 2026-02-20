@@ -190,9 +190,9 @@ body .contact-form {
 }
 
 .logo-image {
-    height: 55px;
+    height: 75px;
     width: auto;
-    max-width: 220px;
+    max-width: 280px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
