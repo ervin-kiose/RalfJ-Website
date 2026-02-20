@@ -91,7 +91,6 @@ body.spotify-page .spotify-embed {
     flex: 1;
     margin-bottom: 15px;
     min-height: 0;
-    max-height: 500px;
 }
 
 body.spotify-page .spotify-embed iframe {
