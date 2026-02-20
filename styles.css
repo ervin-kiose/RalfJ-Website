@@ -67,7 +67,7 @@ body.spotify-page .navbar {
 body.spotify-page .page-section {
     flex: 1;
     display: flex;
-    padding: 8px 0 5px;
+    padding: 15px 0 10px;
     min-height: 0;
 }
 
@@ -83,16 +83,15 @@ body.spotify-page .spotify-content {
 }
 
 body.spotify-page .spotify-description {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     flex-shrink: 0;
     font-size: 15px;
 }
 
 body.spotify-page .spotify-embed {
     flex: 1;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     min-height: 0;
-    border-radius: 12px;
     overflow: hidden;
 }
 
@@ -105,8 +104,8 @@ body.spotify-page .spotify-embed iframe {
 body.spotify-page .spotify-content .btn {
     flex-shrink: 0;
     align-self: center;
-    padding: 10px 28px;
-    font-size: 12px;
+    padding: 12px 30px;
+    font-size: 13px;
 }
 
 body.spotify-page .footer {
