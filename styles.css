@@ -1011,7 +1011,6 @@ body .contact-form {
     }
 
     body.spotify-page .spotify-content {
-        flex: 1;
         display: flex;
         flex-direction: column;
     }
@@ -1019,11 +1018,15 @@ body .contact-form {
     body.spotify-page .spotify-description {
         font-size: 14px;
         margin-bottom: 5px;
+        flex-shrink: 0;
     }
 
     body.spotify-page .spotify-embed {
         margin-bottom: 5px;
-        flex-shrink: 0;
+    }
+
+    body.spotify-page .spotify-embed iframe {
+        height: 45vh;
     }
 
     body.spotify-page .spotify-content .btn {
@@ -1031,7 +1034,6 @@ body .contact-form {
         font-size: 12px;
         flex-shrink: 0;
         margin-top: 5px;
-        flex-shrink: 0;
     }
 
     .hero-title {
