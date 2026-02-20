@@ -1006,6 +1006,22 @@ body .contact-form {
         background: transparent;
     }
 
+    .contact.page-section {
+        padding-top: 70px;
+        padding-bottom: 0;
+        min-height: auto;
+        flex: none;
+    }
+
+    .contact ~ .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
+    }
+
     body.spotify-page .spotify-description {
         font-size: 14px;
         margin-bottom: 5px;
