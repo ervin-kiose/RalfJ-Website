@@ -1062,6 +1062,7 @@ body .contact-form {
         top: 0;
         left: 0;
         object-fit: contain;
+        transform: scale(1.5);
     }
 
     body.home-page {
