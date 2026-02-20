@@ -994,6 +994,7 @@ body .contact-form {
         padding-top: 70px;
         padding-bottom: 0;
         min-height: auto;
+        flex: none;
     }
 
     body.spotify-page .spotify-description {
