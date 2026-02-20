@@ -990,11 +990,30 @@ body .contact-form {
         font-size: 10px;
     }
 
+    body.spotify-page {
+        height: 100vh;
+        overflow: hidden;
+    }
+
     body.spotify-page .page-section {
         padding-top: 70px;
         padding-bottom: 0;
         min-height: auto;
-        flex: none;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body.spotify-page .page-section > .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body.spotify-page .spotify-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     body.spotify-page .spotify-description {
@@ -1003,13 +1022,20 @@ body .contact-form {
     }
 
     body.spotify-page .spotify-embed {
+        flex: 1;
         margin-bottom: 5px;
+    }
+
+    body.spotify-page .spotify-embed iframe {
+        height: 100%;
+        min-height: 0;
     }
 
     body.spotify-page .spotify-content .btn {
         padding: 8px 20px;
         font-size: 12px;
-        margin-bottom: 30px;
+        margin-top: 5px;
+        flex-shrink: 0;
     }
 
     .hero-title {
@@ -1133,11 +1159,7 @@ body .contact-form {
 
     body.spotify-page .spotify-description {
         font-size: 12px;
-        margin-bottom: 8px;
-    }
-
-    body.spotify-page .spotify-embed {
-        margin-bottom: 8px;
+        margin-bottom: 5px;
     }
 
     body.spotify-page .spotify-content .btn {
@@ -1146,7 +1168,7 @@ body .contact-form {
     }
 
     body.spotify-page .spotify-embed iframe {
-        min-height: 350px;
+        min-height: 0;
     }
     
     .hero-buttons {
