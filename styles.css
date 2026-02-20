@@ -1007,19 +1007,42 @@ body .contact-form {
     }
 
     .contact.page-section {
-        padding-top: 70px;
+        padding-top: 60px;
         padding-bottom: 0;
         min-height: auto;
-        flex: none;
     }
 
-    .contact ~ .footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        background: transparent;
+    .contact .contact-intro {
+        margin-bottom: 8px;
+    }
+
+    .contact .contact-intro h3 {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .contact .contact-intro p {
+        font-size: 12px;
+    }
+
+    .contact .contact-form {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .contact .contact-form input,
+    .contact .contact-form textarea {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .contact .contact-form textarea {
+        min-height: 80px;
+    }
+
+    .contact .contact-form button {
+        padding: 8px 20px;
+        font-size: 12px;
     }
 
     body.spotify-page .spotify-description {
