@@ -1146,8 +1146,7 @@ body .contact-form {
     }
 
     body.spotify-page .spotify-embed iframe {
-        min-height: 300px;
-        height: 300px;
+        min-height: 350px;
     }
     
     .hero-buttons {
