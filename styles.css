@@ -1076,11 +1076,11 @@ body .contact-form {
     }
 
     body.home-page .footer {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
-        z-index: 10;
+        z-index: 1000;
         background: rgba(0, 0, 0, 0.5);
     }
 }
