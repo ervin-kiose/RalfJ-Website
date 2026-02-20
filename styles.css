@@ -1057,8 +1057,19 @@ body .contact-form {
     }
 
     .hero-video {
-        object-fit: contain;
-        background: #000;
+        object-fit: cover;
+        object-position: center center;
+        transform: scale(0.85);
+    }
+
+    body.home-page .hero {
+        height: calc(100vh - 60px);
+        min-height: auto;
+    }
+
+    body.home-page .footer {
+        position: relative;
+        bottom: auto;
     }
 }
 
