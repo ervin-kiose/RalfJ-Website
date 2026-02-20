@@ -994,6 +994,16 @@ body .contact-form {
         padding-top: 70px;
         padding-bottom: 0;
         min-height: auto;
+        flex: none;
+    }
+
+    body.spotify-page .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
     }
 
     body.spotify-page .spotify-description {
