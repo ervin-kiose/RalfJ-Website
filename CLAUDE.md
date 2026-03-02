@@ -66,6 +66,7 @@ Designed by Ervin Kiose. Deployed on Vercel with auto-deploy on push.
 - `grayscale_transparent.png` — grayscale version of logo (available but not currently used)
 - `InstagramTransparent.png`, `TikTokTransparent.png`, `SpotifyTransparent.png`, `SoundcloudTransparent.png`, `BeatportTransparent.png`, `AppleTransparent.png`, `TraxsourceTransparent.png` — footer social icons
 - `one-kiss-party-poster.jfif` — One Kiss Party event poster (Nate Hannover, Dec 2025)
+- `val-thorens-event.jfif` — Apres Ski event photo (Val Thorens, Jan 2026)
 - `hero-video.mp4` — hero background video
 - `Video 6-7-23, 23 35 09.mov` — original video file
 - Favicons: `favicon-32x32.png`, `favicon-16x16.png`, `apple-touch-icon.png`
@@ -97,7 +98,10 @@ Designed by Ervin Kiose. Deployed on Vercel with auto-deploy on push.
 - **Cards (current):**
   1. Coming Soon — placeholder Unsplash image — UPCOMING
   2. Coming Soon — placeholder Unsplash image — UPCOMING
-  3. Coming Soon — placeholder Unsplash image — UPCOMING
+  3. Apres Ski — `val-thorens-event.jfif` — PAST
+     - Date: January 5, 2026
+     - Location: Val Thorens — French Alps
+     - Artists: RALF JAY
   4. One Kiss Party — `one-kiss-party-poster.jfif` (`object-position: center 40%`) — PAST
      - Date: December 13, 2025
      - Venue: Nate Hannover — Hannover, Germany
